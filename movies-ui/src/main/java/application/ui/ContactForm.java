@@ -18,7 +18,11 @@ import com.vaadin.ui.themes.ValoTheme;
  */
 public class ContactForm extends FormLayout {
 
-    Button save = new Button("Save", this::save);
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	Button save = new Button("Save", this::save);
     Button cancel = new Button("Cancel", this::cancel);
     TextField firstName = new TextField("First name");
     TextField lastName = new TextField("Last name");

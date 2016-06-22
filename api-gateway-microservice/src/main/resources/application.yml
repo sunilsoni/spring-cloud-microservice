@@ -1,5 +1,5 @@
 server:
-  port: 10000
+  port: 10001 #10000
 
 sidecar:
   port: 8000
@@ -14,9 +14,12 @@ endpoints:
 
 eureka:
   instance:
-    hostname: gateway
+    hostname: discovery-microservice.azurewebsites.net    
+     #gateway
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://discovery-microservice.azurewebsites.net/eureka/
+      #http://localhost:8761/eureka/
+      # http://discovery:8761/eureka/

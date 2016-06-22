@@ -8,11 +8,12 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://discovery-microservice.azurewebsites.net/eureka/
+      #http://discovery:8761/eureka/
 
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/kbastani/spring-boot-microservice-config
+          uri: https://github.com/sunilsoni/spring-cloud-microservice-config

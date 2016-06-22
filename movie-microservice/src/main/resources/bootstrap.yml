@@ -3,6 +3,8 @@ spring:
     name: movie
   cloud:
     config:
-      uri: http://configserver:8888
+      uri: http://config-microservice.azurewebsites.net/
+      #http://localhost:8888 
+      #http://configserver:8888
 encrypt:
   failOnError: false

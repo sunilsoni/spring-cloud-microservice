@@ -3,4 +3,5 @@ spring:
     name: consul
   cloud:
     consul:
-        host: consulagent
+        host:  localhost
+        #consulagent
